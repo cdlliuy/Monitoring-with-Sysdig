@@ -48,4 +48,9 @@ See the [official Sysdig REST API conventions](https://docs.sysdig.com/en/sysdig
 For dashboard operations, see [Working with Dashboards](https://docs.sysdig.com/en/working-with-dashboards.html)
 
 For saving and backing up dashboards, see [Save and Restore Dashboards](https://docs.sysdig.com/en/save-and-restore-dashboards-with-scripts.html)
+Note:  Given IBM Cloud Monitoring with Sysdig is an on-primses installation of Sysdig,  please [apply additional configuration for on-premises installation](https://github.com/draios/python-sdc-client#on-premises-installs) before running the python scripts for dashboard management as below:
+```
+export SDC_URL='https://<YOUR-API-SERVER-HOSTNAME-OR-IP>'
+export SDC_SSL_VERIFY='false'
+```
 
